@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import valentine from "./assets/valentine.mp3";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -88,7 +89,7 @@ export default function Page() {
               style={{ fontSize: yesButtonSize }}
               onClick={() => {
                 setYesPressed(true);
-                const audio = new Audio("/valentine.mp3");
+                const audio = new Audio(valentine);
                 audio.play().catch((err) => console.log(err));
               }}
             >
