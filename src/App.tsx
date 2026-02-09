@@ -16,13 +16,13 @@ export default function Page() {
       "Are you sure?",
       "What if I asked really nicely?",
       "Pretty please",
-      "With a chocolate rice cake on top",
-      "What about a matcha frostie",
+      "With ben n jerrys on top?",
+      "What about me on top?",
       "PLEASE POOKIE",
-      "But :*(",
+      "But :'(",
       "I am going to die",
       "Yep im dead",
-      "ok ur talking to sultan's ghost",
+      "ok ur talking to andrei's ghost",
       "please babe",
       ":((((",
       "PRETTY PLEASE",
@@ -53,7 +53,7 @@ export default function Page() {
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
           <div className="my-4 text-4xl font-bold">
-            WOOOOOO!!! I love you my chunku pie!!
+            WOOOOOO!!! I love you my pookie nigga!!
           </div>
           <div className="w-full max-w-md mt-2">
             <div
@@ -86,7 +86,11 @@ export default function Page() {
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
               style={{ fontSize: yesButtonSize }}
-              onClick={() => setYesPressed(true)}
+              onClick={() => {
+                setYesPressed(true);
+                const audio = new Audio("/valentine.mp3");
+                audio.play().catch(() => {});
+              }}
             >
               Yes
             </button>
