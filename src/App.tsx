@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -33,12 +33,46 @@ export default function Page() {
     return phrases[Math.min(noCount, phrases.length - 1)];
   };
 
+  // Load Tenor embed script when "Yes" is pressed (once)
+  useEffect(() => {
+    if (yesPressed) {
+      const existing = document.querySelector(
+        'script[src="https://tenor.com/embed.js"]',
+      );
+      if (!existing) {
+        const s = document.createElement("script");
+        s.src = "https://tenor.com/embed.js";
+        s.async = true;
+        document.body.appendChild(s);
+      }
+    }
+  }, [yesPressed]);
+
   return (
     <div className="-mt-16 flex h-screen flex-col items-center justify-center">
       {yesPressed ? (
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I love you pookie!! ;))</div>
+          <div className="my-4 text-4xl font-bold">
+            WOOOOOO!!! I love you pookie!!
+          </div>
+          <div className="w-full max-w-md mt-2">
+            <div
+              className="tenor-gif-embed"
+              data-postid="16532097222650895810"
+              data-share-method="host"
+              data-aspect-ratio="1"
+              data-width="100%"
+            >
+              <a href="https://tenor.com/view/cat-holding-a-rose-hand-emoji-charles-scarlet-wing-charles-cat-flower-cat-holding-a-rose-gif-16532097222650895810">
+                Cat Holding A Rose Hand Emoji Charles Scarlet Wing Meme
+              </a>
+              from
+              <a href="https://tenor.com/search/cat+holding+a+rose+hand+emoji+charles-memes">
+                Cat Holding A Rose Hand Emoji Charles Memes
+              </a>
+            </div>
+          </div>
         </>
       ) : (
         <>
