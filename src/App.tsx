@@ -89,7 +89,7 @@ export default function Page() {
               onClick={() => {
                 setYesPressed(true);
                 const audio = new Audio("/valentine.mp3");
-                audio.play().catch(() => {});
+                audio.play().catch((err) => console.log(err));
               }}
             >
               Yes
