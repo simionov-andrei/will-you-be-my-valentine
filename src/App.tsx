@@ -22,11 +22,10 @@ export default function Page() {
       "But :*(",
       "I am going to die",
       "Yep im dead",
-      "ok ur talking to nathan's ghost",
+      "ok ur talking to sultan's ghost",
       "please babe",
       ":((((",
       "PRETTY PLEASE",
-      "Estoy muerto",
       "No :(",
     ];
 
@@ -62,7 +61,7 @@ export default function Page() {
               data-postid="16532097222650895810"
               data-share-method="host"
               data-aspect-ratio="1"
-              data-width="100%"
+              data-width="70%"
             >
               <a href="https://tenor.com/view/cat-holding-a-rose-hand-emoji-charles-scarlet-wing-charles-cat-flower-cat-holding-a-rose-gif-16532097222650895810">
                 Cat Holding A Rose Hand Emoji Charles Scarlet Wing Meme
@@ -76,10 +75,13 @@ export default function Page() {
         </>
       ) : (
         <>
-          <img
-            className="h-[200px]"
-            src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
-          />
+          <div className="flex items-center gap-4">
+            <img
+              className="h-[200px]"
+              src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
+            />
+            <img className="h-[200px]" src="/pic1.jpeg" alt="Pic 1" />
+          </div>
           <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
           <div className="flex items-center">
             <button
