@@ -53,7 +53,7 @@ export default function Page() {
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
           <div className="my-4 text-4xl font-bold">
-            WOOOOOO!!! I love you chunku pie!!
+            WOOOOOO!!! I love you my chunku pie!!
           </div>
           <div className="w-full max-w-md mt-2">
             <div
