@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import valentine from "./assets/valentine.mp3";
 import mimi from "./assets/mimi.jpeg";
+import raiuno from "./assets/raiuno.jpeg";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -14,21 +15,20 @@ export default function Page() {
 
   const getNoButtonText = () => {
     const phrases = [
-      "No",
-      "Are you sure?",
-      "What if I asked really nicely?",
-      "Pretty please",
-      "With ben n jerrys on top?",
-      "What about me on top?",
-      "PLEASE POOKIE",
-      "But :'(",
-      "I am going to die",
-      "Yep im dead",
-      "ok ur talking to andrei's ghost",
-      "please babe",
+      "Nu",
+      "Ești sigur?",
+      "Dacă te-aș ruga foarte frumos?",
+      "Te rog frumos",
+      "Ce zici de o matcha?",
+      "TE ROG, POOKIE",
+      "Dar :'(",
+      "O să mor",
+      "Am murit",
+      "Ok, vorbești cu fantoma Raisei",
+      "Te roggg, iub",
       ":((((",
-      "PRETTY PLEASE",
-      "No :(",
+      "TE ROG FRUMOS",
+      "Nu :(",
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -56,7 +56,7 @@ export default function Page() {
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
 
           <div className="my-4 text-4xl font-bold">
-            WOOOOOO!!! I love you my pookie nigga!!
+            WOOOOOO!!! Te iubesc natafletule!!
           </div>
           <div className="w-full max-w-md mt-2">
             <div
@@ -83,7 +83,7 @@ export default function Page() {
               className="h-[200px]"
               src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
             />
-            <img className="h-[200px]" src={`${mimi}`} />
+            <img className="h-[200px]" src={`${raiuno}`} />
           </div>
           <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
           <div className="flex items-center">
