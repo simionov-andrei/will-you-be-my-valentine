@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import valentine from "./assets/valentine.mp3";
-import mimi from "./assets/mimi.jpeg";
+//import mimi from "./assets/mimi.jpeg";
 import raiuno from "./assets/raiuno.jpeg";
 
 export default function Page() {
